@@ -1,6 +1,6 @@
 {
   "name": "org.apache.cordova.zebrapc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova/Phonegap plugin for Zebra bluetooth printers",
   "cordova": {
     "id": "org.apache.cordova.zebrapc",
@@ -18,12 +18,5 @@
     "ecosystem:cordova"
   ],
   "author": "Luis Silva",
-  "license": "MIT",
-  "engines": {
-    "cordovaDependencies": {
-      "2.0.0": {
-        "cordova": ">100"
-      }
-    }
-  }
+  "license": "MIT"
 }
