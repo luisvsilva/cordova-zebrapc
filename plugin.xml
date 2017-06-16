@@ -6,6 +6,9 @@
     <name>Zebra Print Connect</name>
 	<description>Cordova/Phonegap plugin for Zebra bluetooth printers</description>
     <license>Apache</license>
+	<keywords>Ionic,deploy</keywords>
+    <repo>https://github.com/luisvsilva/cordova-zebrapc.git</repo>
+	
     <engines>
         <engine name="cordova" version=">=4.0.0" />
     </engines>    
