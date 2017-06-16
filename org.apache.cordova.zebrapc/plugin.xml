@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.apache.cordova.zebrapc"
+    version="0.1">
+
+    <name>Zebra Print Connect</name>
+	<description>Cordova/Phonegap plugin for Zebra bluetooth printers</description>
+    <license>Apache</license>
+    <engines>
+        <engine name="cordova" version=">=4.0.0" />
+    </engines>    
+
+    <js-module src="www/zebrapc.js" name="ZebraPc">
+        <clobbers target="cordova.plugins.zebrapc" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+	
+	  <source-file src="src/android/org/apache/cordova/zebrapc/ZebraPc.java" target-dir="src/org/apache/cordova/zebrapc/" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ZebraPc">
+                <param name="android-package" value="org.apache.cordova.zebrapc.ZebraPc" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
