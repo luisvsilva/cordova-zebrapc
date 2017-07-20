@@ -15,10 +15,7 @@ public class ZebraPc extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray inargs, final CallbackContext callbackContext) throws JSONException
 	{
-		final String packageName = "mobileapp.nta";
-		int appIconId = cordova.getActivity().getResources().getIdentifier("icon", "drawable", packageName);
-		Log.i("PushLinkPlugin", "This is the value of appIconId:" + VERSION);
-
+		
 		if(action.equals(PRINT))
 		{
 			final String templateName = inargs.getString(0);
